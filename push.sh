@@ -1,5 +1,5 @@
 pdflatex main.tex
-convert -verbose -flatten -density 500 -resize '1080' main.pdf main.jp2
+convert -verbose -flatten -density 500 -resize '1080' main.pdf main.jpg
 git add .
 git commit -m "update"
 git push origin master
