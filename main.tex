@@ -1,0 +1,207 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+% Include a footer
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\begin{document}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[CO]{\vspace{\fill} This R\'esum\'e was created with \LaTeX \href{}{ | \texttt{Source}}}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.38\textwidth}
+	\vspace{-\baselineskip}
+
+  \Huge{{\textbf{\MakeUppercase{Anthony}}}}
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{De Vellis}}}}}
+
+	{\Large Full Stack Developer}
+\end{minipage}
+\begin{minipage}[t]{0.31\textwidth}
+	\vspace{-\baselineskip}
+	
+	\icon{MapMarker}{12}{Vaughan, ON, Canada}\\
+	\icon{Phone}{12}{\href{tel:16478189713}{647 818 9713}}\\
+	\icon{Envelope}{12}{\href{mailto:anthonydevellis@gmail.com}{anthonydevellis@gmail.com}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.31\textwidth}
+	\vspace{-\baselineskip}
+	
+	\icon{Globe}{12}{\href{http://www.anthony-dev.com}{anthony-dev.com}}\\
+	\icon{Github}{12}{\href{https://github.com/Apollonaut-dev}{github.com/Apollonaut-dev}}\\
+	\icon{University}{12}{}{Athabasca U (part time)}\\
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+% \cvsect{Skills}
+
+% \begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+% 	\lorem \lorem \lorem \lorem \lorem\\ % Dummy text
+% \end{minipage}
+% \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+%   \cvsect{Skills}
+%   \vspace{0.25cm}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+% 	\begin{barchart}{4}
+% 		\baritem{REST Design}{40}
+% 		\baritem{Authentication/Authorization}{30}
+% 		\baritem{Server-rendered webapps}{50}
+% 		\baritem{Fullstack apps}{20}
+% 		\baritem{Functional programming}{50}
+%     \baritem{Object-Oriented Programming}{40}
+%     \baritem{Automated Testing \& TDD}{60}
+% 	\end{barchart}
+% \end{minipage}
+% \hfill % Whitespace between
+% \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+%   \cvsect{Technologies}
+%   \vspace{0.25cm}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+% 	\begin{barchart}{4}
+% 		\baritem{JavaScript}{80}
+% 		\baritem{Express.js}{50}
+% 		\baritem{MongoDB/Mongoose}{40}
+% 		\baritem{MySQL}{20}
+%     \baritem{React}{40}
+%     \baritem{Firebase}{80}
+% 		\baritem{Git}{40}
+% 		\baritem{\LaTeX}{20}
+% 	\end{barchart}
+% \end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\cvsect{Projects}
+\begin{entrylist}
+  \entryproject
+    {Track.me (WIP)}
+    {\href{https://github.com/Apollonaut-dev/Track.me}{/Apollonaut-dev/Track.me}}
+    {Create trackers to measure time-series data about various habits, skills, moods, diet, or any other quantifiable pattern of behaviour. Compare, overlay, draw correlations and utilize Track.me's visualization features to help you understand yourself and how to change your behaviour.\smallskip \\\texttt{API: }\texttt{node.js}\slashsep\texttt{Express}\slashsep\texttt{JWT}\slashsep\texttt{MongoDB}\slashsep\texttt{Mongoose}\slashsep\texttt{Mocha+Chai+Sinon}\\\texttt{Client: }\texttt{React}\slashsep\texttt{CSS Modules}\slashsep\texttt{Chart.js}}
+  \\
+  \entryproject
+    {Personal Server and Website}
+    {\texttt{source:} \href{https://github.com/Apollonaut-dev/Project.me-2.0}{/Apollonaut-dev/Project.me-2.0} | \texttt{live:} \href{http://www.anthony-dev.com}{anthony-dev.com}}
+    {My first web project which I use as a web development laboratory and treat as a production webapp. Hosts full resume, an auto-biography, a contact form, a project list, and essays about topics that interest me. Deployed to AWS.\smallskip \\\texttt{node.js}\slashsep\texttt{Express}\slashsep\texttt{EJS}\slashsep\texttt{Nodemailer}\slashsep\texttt{EJS}\slashsep\texttt{CSS}\slashsep\texttt{CSS Grid}\slashsep\texttt{JSDOM}}
+  \\
+  \entryproject
+    {React Firebase Template Project}
+    {\href{https://github.com/Apollonaut-dev/ReactFirebaseBoilerplate}{/Apollonaut-dev/ReactFirebaseBoilerplate}}
+    {A template React app with well-encapsulated Firebase integration. An educational project to hone React knowledge and deep-dive into Firebase.\\\texttt{React}\slashsep\texttt{Firebase Cloud Functions}\slashsep\texttt{Firebase Database}\slashsep\texttt{Firebase Authentication}}
+  \\
+  \entryproject
+    {Book Shop}
+    {\href{https://github.com/Apollonaut-dev/BookShop}{/Apollonaut-dev/BookShop}}
+    {Educational project to learn about server-rendered webapps, merchant websites, handling file uploads and form submissions, authentication, authorization and payment processing. Completed as an assignment from a course on Udemy. \smallskip \\\texttt{node.js}\slashsep\texttt{Express}\slashsep\texttt{MongoDB}\slashsep\texttt{Mongoose}\slashsep\texttt{EJS}\slashsep\texttt{Sessions}\slashsep\texttt{Nodemailer}\slashsep\texttt{Stripe}}
+  \\
+  \entryproject
+    {Social Media Feed}
+    {\href{https://github.com/Apollonaut-dev/Social-Media-REST-API}{/Apollonaut-dev/Social-Media-REST-API}}
+    {Educational project to learn how to create REST APIs, use Socket.io to asynchronously push data (status updates), and hook them up with automated testing. Allows users to authenticate and access a route-protected feed. Created as an assignment from a course on Udemy. \smallskip \\\texttt{API: }\texttt{node.js}\slashsep\texttt{Express}\slashsep\texttt{JWT}\slashsep\texttt{MongoDB}\slashsep\texttt{Mongoose}\slashsep\texttt{Mocha+Chai+Sinon}\slashsep\texttt{Socket.io}}
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsectWithFootnote{Experience}{\footnotesize{Software experience shown. Full history available upon request}}
+
+\begin{entrylist}
+	\entry
+		{Sep. 2019--Feb. 2020\\\footnotesize{contract}}
+		{Software Engineer in Test}
+		{SiteVue Inc.}
+		{SiteVue team had been expressing concerns about code maintability and so assigned me to write tests, teach them about testing principles, create some guides and presentations for their team, and create a testing framework for their Firebase Cloud Functions \\\texttt{node.js}\slashsep\texttt{Firebase Functions}\slashsep\texttt{Jest}}
+    \\
+	\entry
+		{Jan 2019--Apr. 2019\\\footnotesize{coop}}
+		{Backend developer}
+		{Alert Driving}
+		{Maintained Moodle/Iomad backend for Alert Driving's Learning Management System.\smallskip \\ Following discussions with  project managers, I developed a feature for PMs to batch-send templated emails to problem students saving at least one PM 3-4 hours a week.\smallskip \\LMS team had an unconventional workflow which made it take 3-5 minutes to create a new branch and begin work on a new ticket, so I wrote a BASh script to cut this down to 30 seconds. \smallskip \\\texttt{PHP}\slashsep\texttt{Moodle}\slashsep\texttt{MySQL}\slashsep\texttt{BASh}\slashsep\texttt{JS}\slashsep\texttt{AJAX}\slashsep\texttt{Bootstrap}}
+    \\
+	\entry
+		{Oct. 2015--Sep. 2017\\\footnotesize{start-up/part time}}
+		{Cofounder, CTO}
+		{Guard-Ex Inc.}
+		{Conducted research on law enforcement procedures and cognitive indicators of narcotics and created the product definition. I left the project while working on the prototype due to academic and personal struggles. It was taken up by Dastiger Khan who took GuardEx on Dragon's Den in 2018.\smallskip \\\texttt{Python}\slashsep\texttt{Raspberry Pi}\slashsep\texttt{opencv}}
+    \\
+  \entry
+    {May 2016--Aug. 2016\\\footnotesize{coop}}
+    {Backend developer}
+    {Flipp Corp.}
+    {Maintained product and promotional data parsers and merchant site webscrapers which were a key component of the pipeline to automate digital flyer generation. \smallskip \\ Created internal feature to parse a particular merchant's proprietary XML product and promotional data into the common csv format used by the operations team. \smallskip \\\texttt{Ruby}\slashsep\texttt{Rails}\slashsep\texttt{Selenium}}
+\end{entrylist}
+
+\begin{center}
+\cvsect{Full skills inventory, education history, and references available upon request}
+\end{center}
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+%
+% \cvsect{Education}
+%
+% \begin{entrylist}
+% 	\entry
+% 		{2019--present}
+% 		{Part time}
+% 		{Athabasca University}
+% 		{}
+% 	\entry
+% 		{2016--2018}
+% 		{Computer Engineering, BASc; (transferred)}
+% 		{University of Waterloo}
+% 		{}
+% 	\entry
+% 		{2014--2016}
+% 		{Mechanical Engineering, BASc; (incomplete)}
+% 		{University of Waterloo}
+% 		{}
+% \end{entrylist}
+%
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+%
+% \begin{minipage}[t]{0.3\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+%
+% 	\cvsect{Languages}
+%	
+% 	\textbf{English} - native\\
+% 	\textbf{German} - proficient\\
+% 	\textbf{Polish} - rudimentary
+% \end{minipage}
+% \hfill
+% \begin{minipage}[t]{0.3\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+%	
+% 	\cvsect{Hobbies}
+%	
+% 	I love... \lorem
+% \end{minipage}
+% \hfill
+% \begin{minipage}[t]{0.3\textwidth}
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+%	
+% 	\cvsect{Non profit}
+%
+% 	I help... \lorem
+% \end{minipage}
+%----------------------------------------------------------------------------------------
+\end{document}
