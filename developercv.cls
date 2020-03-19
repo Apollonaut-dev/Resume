@@ -109,6 +109,11 @@
 %	CHARTS
 %---------------------------------------------------------------------------------------- 
 
+\newcommand{\skill}[1]{
+  \texttt{#1} \smallskip \\
+}
+
+
 \newcounter{barcount}
 
 % Environment to hold a new bar chart
